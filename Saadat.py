@@ -904,7 +904,7 @@ def rcrack(ids,passlist):
 def menu_apikey():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "_".join(uuid)
-  server = requests.get('https://github.com/AF-Raziq/Test/blob/main/T.txt').text
+  server = requests.get('https://github.com/NSKBRAND/Approval.txt').text
   
  
 
@@ -946,72 +946,6 @@ def menu_apikey():
  [0] Exit menu
 ==================================================   """)
 
-print("\t \033[1;37m  FIRST GET APPROVEL\033[1;37m ")
-  print("")
-  print(" \033[1;37m  THIS TOOLS IS PAID SO YOU NEED GET APPROVED FIRST\033[1;37m\n")
-  print("")
-  print("\x1b[1;97m   contact Admin to Buy this Tools                                                               ");time.sleep (0.1) 
-  print("")
-  print("\033[1;37     YOUR  KEY : "+id)
-  print("")
-  print("\033[1;37m   COPY YOUR KEY AND SEND TO ADMIN  ");time.sleep(0.1)
-  print("")
-  print("  SEND KEY ON ADMIN MESSENGER ");time.sleep(1)
-  os.system('xdg-open https://Whatsapp.me.+93702856593')
-  print("");time.sleep(2)
-  print("\x1b[1;97m  CHECKING YOUR APROVAL.                                      ");time.sleep (0.5)
-  try:
-    httpCaht = requests.get("https://github.com/AF-Raziq/Test/blob/main/T.txt").text
-    if id in httpCaht:
-     # print("\033[1;97m   YOUR TOKEN APROVED ");time.sleep(2)
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      pass
-    else:
-      
-      print("    SUBSCRIBE MY CHENNAL AND GET APPROVAL"); time.sleep(2)
-      os.system('xdg-open https://Whatsapp.me.+93702856593')
-      time.sleep(2)
-      sys.exit()
-  except:
-    sys.exit()
-    if name == '__main__':
-    	print(logo)
-    	menu_apikey()
-menu_apikey() 
-
-
-
-def tnx():
-  uuid = str(os.geteuid()) + str(os.getlogin())
-  id = "_".join(uuid)
-  server = requests.get('https://github.com/AF-Raziq/Test/blob/main/T.txt').text
-  
- 
-
-  os.system(" clear ")
-  print(logo)
-  print(" Wait bro,,,, ")
-  print(" Chacking Your Aproval ")
-  print("\x1b[1;97m  CHECKING YOUR APROVAL.............                                                ");time.sleep (0.5)
-  try:
-    httpCaht = requests.get("https://github.com/AF-Raziq/Test/blob/main/T.txt").text
-    if id in httpCaht:
-  #    print("\033[1;97m   YOUR TOKEN APROVED ðŸ¥€ ");time.sleep(2)
-      msg = str(os.geteuid())
-      time.sleep(0.5)
-      pass
-    else:
-      
-      print("    Send payment to Admin and get aproval"); time.sleep(2)
-      os.system('xdg-open https://Whatsapp.me.+93702856593')
-      time.sleep(2)
-      sys.exit()
-  except: 
-    sys.exit()
-    if name == '__main__': 
-    	print(logo)
-    	menu_apikey()
         
 try:
         menu()
