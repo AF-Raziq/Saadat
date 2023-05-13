@@ -116,8 +116,8 @@ logo=("""\033[1;32m
 \033[1;93m--------------------------------------------------
   \033[1;32mFACEBOOK  : Raziqullah Saadat
   \033[1;32mYOUTUBE   : @Saadat
-  \033[1;32mVERSION   : 0.3
-  \033[1;32mOWNER      : Raziqullah Saadat
+  \033[1;32mVERSION   : 0.4
+  \033[1;32mOWNER     : Raziqullah Saadat
 --------------------------------------------------
 \033[1;37m[-]Dear Paid user:
 \033[1;37m[-]Your subscription last date 31/12/23
@@ -567,7 +567,7 @@ def pak():
 		except ValueError:
 			limit = 5000
 		linex()
-		print(' [1] Method 1\n [2] Method 2 Best ')
+		print(' [1] Method 1 [2] Method 2 Best ')
 		linex()
 		mthd = input(' Choose: ')
 		linex()
@@ -613,7 +613,7 @@ def bd():
 		except ValueError:
 			limit = 5000
 		linex()
-		print(' [1] Method 1\n [2] Method 2 ')
+		print(' [1] Method 1 [2] Method 2 ')
 		linex()
 		mthd = input(' Choose: ')
 		for nmbr in range(limit):
@@ -922,7 +922,7 @@ def menu_apikey():
 \033[1;37m[-] GITHUB    :\033[1;32m Saadat
 \033[1;37m[-] WhatsApp  :\033[1;32m +93702856593
 \033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 0.3
+\033[1;37m[-] VERSION   :\033[1;32m 0.4
 \033[1;37m[-] STATUS    :\033[1;32m PAID
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
