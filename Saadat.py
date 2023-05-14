@@ -972,7 +972,7 @@ def Subscraption():
 		print ("")
 		print (" Your Key : "+RS+key1)
 		print ("")
-		name = input(" Your Name : "Saadat)
+		name = input(" Your Name : "+Saadat)
 		print ("")
 		input(" Press Enter To Send Key"RS)
 		time.sleep(3.5)
