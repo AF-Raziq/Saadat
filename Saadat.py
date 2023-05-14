@@ -557,7 +557,7 @@ def menu():
 	else:
 		exit(' Option not found in menu...')
 		
-def afg():
+def pak():
 		user=[]
 		clear()
 		print('\033[1;31m Code example: 077,078,079,070')
