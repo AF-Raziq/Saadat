@@ -947,7 +947,7 @@ def menu_apikey():
 ==================================================   """)
 
 def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrahsan-cov', 'r').read()
+	key1=open('/data/data/com.termux/files/usr/bin/.AFGHAN-cov', 'r').read()
 	clear()
 	print(logo)
 	r1=requests.get("https://pastebin.com/p3jbWM14").text
