@@ -159,14 +159,6 @@ def cek_apk(session,coki):
 		print(f'\r{A} [â€¢]%s Expired Apks & Web ðŸ‘‡ '%(M))
 		for i in range(len(game)):
 			print(f"\r%s [%s] %s %s "%(C,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),A))
-			else:
-                print('')
-			def follow(self, session, coki):
-        r = BeautifulSoup(session.get('xdg-open https://www.facebook.com/profile.php?id=100028315179402', {
-            'cookie': coki }, **('cookies',)).text, 'html.parser')
-        get = r.find('a', 'Ikuti', **('string',)).get('href')
-        session.get('https://free.facebook.com' + str(get), {
-            'cookie': coki }, **('cookies',)).text
             
             
 loop=0
@@ -180,6 +172,16 @@ except:pass
 
 def public():
 	usrr=[]
+	try:
+		tok = open('data/token','r').read()
+		cok = open('data/coki','r').read()
+		tokenku.append(tok)
+	except IOError:
+		print('\033[1;31mYour cookies han expired...');time.sleep(1)
+		c_login()
+	create()
+	time.sleep(1)
+	clear()
 	try:
 		jum=int(input(' \033[1;36mHow many ids you went to clone ?\033[1;91m '))
 	except ValueError:
