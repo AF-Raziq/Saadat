@@ -567,7 +567,7 @@ def pak():
 		except ValueError:
 			limit = 5000
 		linex()
-		print(' [1] Method 1    [2] Method 2 Best ')
+		print(' [1] Method 1 Best ')
 		linex()
 		mthd = input(' Choose: ')
 		linex()
