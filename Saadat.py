@@ -116,7 +116,7 @@ logo=("""\033[1;32m
 \033[1;93m--------------------------------------------------
   \033[1;32mFACEBOOK  : Raziqullah Saadat
   \033[1;32mYOUTUBE   : @Saadat
-  \033[1;32mVERSION   : 0.5
+  \033[1;32mVERSION   : 0.6
   \033[1;32mOWNER     : Raziqullah Saadat
 --------------------------------------------------
 \033[1;37m[-]Dear Paid user:
@@ -557,7 +557,7 @@ def menu():
 	else:
 		exit(' Option not found in menu...')
 		
-def pak():
+def afg():
 		user=[]
 		clear()
 		print('\033[1;31m Code example: 077,078,079,070')
@@ -922,7 +922,7 @@ def menu_apikey():
 \033[1;37m[-] GITHUB    :\033[1;32m Saadat
 \033[1;37m[-] WhatsApp  :\033[1;32m +93702856593
 \033[1;37m[-] TOOLS     :\033[1;32m MIX CLONING
-\033[1;37m[-] VERSION   :\033[1;32m 0.5
+\033[1;37m[-] VERSION   :\033[1;32m 0.6
 \033[1;37m[-] STATUS    :\033[1;32m PAID
 ==================================================
 \033[1;33m[*]TOOLS  : Facebook cloning
